@@ -1,0 +1,24 @@
+//######################################################################################################################
+// #HAPPY CODING#
+
+//##################################################
+// #HELPERS#
+
+// #HELPERS/spacer#
+.spacer { height:$line-height-computed; }
+.spacer-xs { height:$line-height-computed / 2; }
+.spacer-lg { height:$line-height-computed * 2; }
+.spacer-zero { margin:0; padding:0; }
+
+// #HELPERS/compatibility#
+p.noscript, p.chromeframe { position:absolute; left:0; top:0; z-index:9999; width:100%;
+    color:white; text-align:center; padding:$line-height-computed / 2 0; margin:0;
+    border:5px solid darken($brand-danger, 20%); background:$brand-danger; }
+p.noscript a, p.chromeframe a { color:white; font-weight:bold; }
+
+.skip-links { @extend .list-unstyled;
+    position:absolute; left:0; top:0; right:0; z-index:9999;
+    a { position:absolute; left:-9999px; color:white; &:focus { left:0; } }
+}
+
+// end of happy coding

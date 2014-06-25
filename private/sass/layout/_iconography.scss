@@ -1,0 +1,57 @@
+//######################################################################################################################
+// #HAPPY CODING#
+
+// #ICONS/variables#
+$icon-size:      22px !default;
+$icon-space:     5px !default;
+$icon-offset:    -1px !default;
+
+// #ICONS/font#
+@font-face {
+    font-family:"icons";
+    font-weight:normal;
+    font-style: normal;
+    src:url("../fonts/fontastic/icons.eot");
+    src:url("../fonts/fontastic/icons.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/fontastic/icons.ttf") format("truetype"),
+        url("../fonts/fontastic/icons.woff") format("woff"),
+        url("../fonts/fontastic/icons.svg#icons") format("svg"); // #orange has to be equal to the projects name
+}
+
+.icon,
+[data-icon]:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before { font:normal normal normal $icon-size "icons" !important;
+    content:attr(data-icon);
+    text-transform:none !important;
+    speak:none;
+    line-height: 1;
+    position:relative; top:$icon-offset;
+    @include inline-block();
+    @include font-smoothing();
+}
+.icon-left { padding-right:$icon-space; }
+.icon-right { padding-left:$icon-space; }
+
+// #ICONS:start#
+.icon-arrow-top:before { content:"f"; }
+.icon-arrow-right:before { content:"g"; }
+.icon-arrow-bottom:before { content:"h"; }
+.icon-arrow-left:before { content:"i"; }
+.icon-accept:before { content:"d"; }
+.icon-close:before { content:"e"; }
+.icon-collapse:before { content:"k"; }
+.icon-download:before { content:"q"; }
+.icon-expand:before { content:"j"; }
+.icon-facebook:before { content:"m"; }
+.icon-google:before { content:"o"; }
+.icon-info:before { content:"a"; }
+.icon-print:before { content:"p"; }
+.icon-question:before { content:"b"; }
+.icon-refresh:before { content:"y"; }
+.icon-rss:before { content:"l"; }
+.icon-twitter:before { content:"n"; }
+.icon-warning:before { content:"c"; }
+// #ICONS:end#
+
+// end of happy coding

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n cms_tags %}
+
+{% block body_class %}tpl-fullwidth{% endblock %}
+
+{% block extend_base %}
+<div class="row">
+    <div class="col-md-24">
+        {% block content %}
+        {% with 1200 as width %}{% placeholder content %}{% endwith %}
+        {% endblock content %}
+    </div>
+</div>
+{% endblock extend_base %}

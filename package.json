@@ -1,0 +1,17 @@
+{
+    "name": "package",
+    "repository": {},
+    "version": "0.1.0",
+    "dependencies": {},
+    "devDependencies": {
+        "gulp": "~3.8.0",
+        "gulp-jshint": "~1.5.0",
+        "gulp-uglify": "~0.2.1",
+        "gulp-imagemin": "~0.1.5",
+        "browser-sync": "~0.9.1",
+        "jshint-stylish": "~0.1.5"
+    },
+    "engines": {
+        "node": ">=0.9.0"
+    }
+}
