@@ -157,7 +157,7 @@ INSTALLED_APPS = [
 
     # project
     'core',
-    'aldryn_theme_standardsite',
+    'aldryn_theme_autofaszination',
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = [
